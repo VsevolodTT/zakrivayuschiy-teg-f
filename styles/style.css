@@ -30,18 +30,9 @@
   align-items: center;
   gap: 100px;
   padding-bottom: 120px;
+  background-attachment: fixed;
 }
 
-@supports (
-  (-webkit-text-stroke: 1px var(--page-bg-color)) or
-    (text-stroke: 1px var(--page-bg-color))
-) {
-  .card-img_wtrmark {
-    text-shadow: none;
-    -webkit-text-stroke: 1px var(--page-bg-color);
-    text-stroke: 1px var(--page-bg-color);
-  }
-}
 /* Стили для header:  */
 
 .header {
@@ -68,6 +59,11 @@
   /* font-size: 65px; */
   font-size: clamp(3.063rem, 2.71rem + 1.5vw, 4.063rem);
   line-height: 65px;
+  text-decoration: none;
+}
+
+.header-title:focus {
+  outline: none;
 }
 
 .header-subtitle {
@@ -181,6 +177,7 @@
   inset-inline-end: 23px;
   inset-block-start: 27px;
   text-shadow: 0 0 1px var(--page-bg-color, #ffffff);
+  opacity: 0.5;
 }
 
 .card-img {
@@ -354,6 +351,17 @@
   animation: heart 0.3s 0.1s ease-in;
 }
 
+@supports (
+  (-webkit-text-stroke: 1px var(--page-bg-color)) or
+    (text-stroke: 1px var(--page-bg-color))
+) {
+  .card-img_wtrmark {
+    text-shadow: none;
+    -webkit-text-stroke: 1px var(--page-bg-color);
+    text-stroke: 1px var(--page-bg-color);
+  }
+}
+
 /* .like-icon.is-liked .sparks {
   animation: sparks 0.3s 0.3s ease-in;
 } */
@@ -404,6 +412,7 @@
 
 .dialog__button {
   inline-size: 85%;
+  text-transform: uppercase;
 }
 
 .dialog {
