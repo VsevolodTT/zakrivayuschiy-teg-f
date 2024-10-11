@@ -244,7 +244,7 @@
   height: 38px;
 }
 
-.button__mix {
+/* .button__mix {
   border: 2px solid var(--text-color, #000000);
   background-color: var(--page-bg-color, #ffffff);
   cursor: pointer;
@@ -254,7 +254,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
 .save__button {
   gap: 8px;
