@@ -424,7 +424,7 @@
 
 .dialog {
   position: fixed;
-  z-index: 100;
+  z-index: 1;
   background-color: var(--page-bg-color);
   border: 2px solid var(--text-color);
   padding: 30px 40px;
@@ -437,6 +437,10 @@
 .dialog[open] .dialog__conteiner {
   display: flex;
   align-items: center;
+}
+
+dialog::backdrop {
+  background-color: rgb(0, 0, 0, 0.75);
 }
 
 .dialog__conteiner {
@@ -467,10 +471,6 @@
 
 .dialog__button .button__text {
   text-transform: uppercase;
-}
-
-.dialog::backdrop {
-  background-color: rgb(0, 0, 0, 0.75);
 }
 
 /* Стили для моб.версии: */
