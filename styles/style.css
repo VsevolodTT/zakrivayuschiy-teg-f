@@ -441,7 +441,7 @@
 
 .dialog__conteiner {
   display: flex;
-  /* align-items: center; */
+  align-items: center;
   font-family: var(--accent-font-family);
   font-size: 14px;
   font-weight: var(--main-font-weight);
