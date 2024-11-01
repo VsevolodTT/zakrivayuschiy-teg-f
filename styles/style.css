@@ -508,7 +508,7 @@ dialog::backdrop {
     padding-right: 27px;
   }
   .card-list {
-    gap: 55px;
+    gap: 52px;
   }
 
   .card-img_wtrmark {
@@ -543,10 +543,10 @@ dialog::backdrop {
 
   .dialog {
     padding: 30px 40px;
-    inline-size: 91%;
+    /* inline-size: 91%;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    display: flex;
+    display: flex; */
   }
 }
